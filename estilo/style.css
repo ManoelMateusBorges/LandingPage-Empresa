@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* =========== HEADER ========== */
+
+header#header{
+	width: 100%;
+	background-color: rgb(220, 220, 220);
+	padding: 10px 2% 25px 2%;
+}
+
+header#header > div.header-container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0px auto;
+	display: flex;
+	justify-items: center;
+	justify-content: space-between;
+}
+
+/* MAIN FORM  */
+
+main#main{
+	background-image: url(../imagens/bg-form.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 620px;
+	max-width: 1024px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+main#main > div.main-form{
+	background-color: #ffffff;
+	width: 400px;
+	margin-right: 40px;
+	position: relative;
+	height: 530px;
+	
+	box-shadow: 2px 2px 5px -2px  black;
+	border-radius: 5px;
+}
+
+div.main-form > form > div.main-form-input{
+	margin:0px auto;
+	width: 98%;
+	padding-left:10px;
+	margin:40px 0px;
+}
+
+div.main-form > form > h2{
+	background-color: rgb(210, 210, 210);
+	padding:30px 10px;
+	font-size:18px;
+}
+
+div.main-form > form > div.main-form-input > span{
+	display: block;
+	color: rgb(138, 90, 90);
+}
+div.main-form > form > div.main-form-input > input{
+	height: 45px;
+	width: 95%;
+	line-height: 45px;
+	padding-left: 2%;
+	outline: none;
+	border: 1px solid;
+	font-size: 16px;
+	display: block;
+
+}
+
+div.main-form > form > div > button[type=submit]{
+	padding: 10px 40px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #29526d;
+	border: none;
+	outline: none;
+	margin: auto;
+	display: block;
+}
+
+main#main > img{
+	width: 16px;
+}
+
+/* ======= SECTION #INFORMACA0 ======= */
+
+section#informacao{
+	max-width: 1024px;
+	margin: auto;
+	
+}
+
+section#informacao > div.informacao-descricao{
+	text-align: center;
+	background-color:#29526d;
+	color: white;
+	padding:0px 0px 30px 0px;
+}
+
+section#informacao > div.informacao-descricao > img{
+	width: 60px;
+	position: relative;
+	top: -30px;
+}
+
+/* ========== SECTION DESCRICOES ============ */
+section#descricoes {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0px auto;
+	background-color: red;
+	
+}
+
+section#descricoes > div.descricoes-room{
+	display: flex;	
+	color: white;
+}
+
+section#descricoes > div.descricoes-room > img{
+	width: 60%;
+}
+
+section#descricoes > div.descricoes-room > p{
+	width: 40%;
+	padding: 40px;
+	background-color: #4683ab;
+}
+
+section#descricoes > div.order2{
+	flex-direction: row-reverse;
+}
+
+footer{
+	text-align: center;
+	padding: 20px;
+	background-color: #ccc;
+}
+
+
+/* ============== RESPONSIVIDADE ================ */
+
+@media screen and (max-width:760px) {
+	header#header > div.header-container{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+
+	header#header > div.header-container > div.header-logo1{
+		margin: 20px 0px;
+	}
+
+	section#descricoes > div.descricoes-room{
+		flex-direction: column;
+	}
+
+	section#descricoes > div.descricoes-room > img{
+		width: 100%;
+	}
+	
+	section#descricoes > div.descricoes-room > p{
+		width:100%;
+	
+	}
+
+}
